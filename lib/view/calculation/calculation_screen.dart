@@ -36,6 +36,7 @@ class CalculationScreen extends StatelessWidget {
                   height: context.height * 0.8,
                   width: context.dynamicWidth(1 / teamCount - 0.031),
                   child: ListView.builder(
+                    physics: const NeverScrollableScrollPhysics(),
                     itemCount: 11,
                     itemBuilder: (BuildContext context, int index) {
                       return Center(
